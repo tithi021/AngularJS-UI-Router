@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Angular UI-Routing</title>
+
+	<!-- CSS File -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="src/css/style.css">
+
+</head>
+
+<body ng-app="routeApp">
+
+	 <nav class="navbar navbar-inverse" role="navigation">
+		<div class="navbar-header">
+			<h1>AngularJS Routing Using UI-Router</h1>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a ui-sref="whereyou">Route 1</a></li>
+			<li><a ui-sref="finddestination">Route 2</a></li>
+		</ul>
+	</nav>
+	<!-- Main Content -->
+
+	<div>
+		<!--This is where we will inject our content -->
+		<div ui-view></div>
+	</div>
+
+
+	<!-- JS -->
+	
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+
+	<!-- Config File -->
+	<script type="text/javascript" src="src/assets/config/app.js"></script>
+	<script type="text/javascript" src="src/assets/config/config.js"></script>
+
+    <!-- Controller -->
+	<script type="text/javascript" src="whereyou/controller/whereyouCtrl.js"></script>
+	<script type="text/javascript" src="find-destination/controller/finddestinationCtrl.js"></script>
+</body>
+</html>
